@@ -3,11 +3,12 @@ using System.Collections;
 
 public class Ball : MonoBehaviour {
 
-	public Paddel paddel;
+	private Paddel paddel;
 	private bool hasStarted = false;
 	private Vector3 paddelToBallVector;
 	
 	void Start () {
+			paddel = GameObject.FindObjectOfType<Paddel>();
 			paddelToBallVector = this.transform.position - paddel.transform.position;	
 	}
 	
