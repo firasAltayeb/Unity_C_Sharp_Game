@@ -19,10 +19,15 @@ public class Ball : MonoBehaviour {
 			//wait for a mouse press to launch.
 			if(Input.GetMouseButtonDown(0)) {
 				hasStarted = true;
-				this.rigidbody2D.velocity = new Vector2(0f, 10f);
+				this.rigidbody2D.velocity = new Vector2(3f, 10f);
 			}
 		}
 	}
 	
+	void OnCollisionEnter2D (Collision2D collision) {
+		if  (hasStarted) {
+			audio.Play ();
+		}
+	}
 
 }
