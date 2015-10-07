@@ -8,7 +8,7 @@ public class MusicPlayer : MonoBehaviour {
 	void Awake () {
 		if(instance != null){
 			Destroy (gameObject);
-			print (" GameObject destroyed"); 
+		//	print (" GameObject destroyed"); 
 		}else {
 			instance = this;
 			GameObject.DontDestroyOnLoad(gameObject);
