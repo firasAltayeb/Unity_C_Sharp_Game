@@ -8,11 +8,6 @@ public class LoseCollider : MonoBehaviour {
 		void Start () {
 			levelManager= GameObject.FindObjectOfType<LevelManager>();
 		}
-		
-		//void OnTriggerEnter2D (Collider2D trigger) {
-		//	levelManager.LoadLevel("LoseScreen");
-		//}
-		
 		void OnCollisionEnter2D (Collision2D collision) {
 			levelManager.LoadLevel("LoseScreen");
 		}
