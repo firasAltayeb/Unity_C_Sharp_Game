@@ -5,6 +5,7 @@ public class LevelManager : MonoBehaviour {
 	
 	private int levelNumber = 1;
 	
+	
 	public void LoadLevel(string name){	
 		Debug.Log("level load requested for: "+name);
 		Application.LoadLevel(name);

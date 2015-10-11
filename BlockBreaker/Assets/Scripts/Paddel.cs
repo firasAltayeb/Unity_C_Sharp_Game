@@ -3,19 +3,21 @@ using System.Collections;
 
 public class Paddel : MonoBehaviour {
 	
-	private bool autoPlay = false;
+	public bool autoPlay = false;
 	private Ball ball;
+	private AutoPlay au;
 	
 	void Start() {
 		ball = GameObject.FindObjectOfType<Ball>();
+		au = GameObject.FindObjectOfType<AutoPlay>();
 	}
 	
 	void Update () {
-		if(!autoPlay) {
+		if(au.autoPlay || autoPlay) {
+			AutoPlay();
+		} else {
 			MoveWithMouse();
 			//FixedUpdate();
-		} else {
-			AutoPlay();
 		}
 	}
 	

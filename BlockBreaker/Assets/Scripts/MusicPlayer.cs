@@ -6,13 +6,13 @@ public class MusicPlayer : MonoBehaviour {
 	static MusicPlayer instance = null;
 	
 	void Awake () {
-		if(instance != null){
+		if(instance != null) {
 			Destroy (gameObject);
-		//	print (" GameObject destroyed"); 
+			//	print (" GameObject destroyed"); 
 		}else {
 			instance = this;
 			GameObject.DontDestroyOnLoad(gameObject);
-		}
-		
+		}	
 	}
+	
 }
