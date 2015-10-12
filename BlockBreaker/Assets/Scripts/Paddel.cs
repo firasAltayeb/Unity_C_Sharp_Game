@@ -5,15 +5,15 @@ public class Paddel : MonoBehaviour {
 	
 	public bool autoPlay = false;
 	private Ball ball;
-	private AutoPlay au;
+	private AutoPlay ap;
 	
 	void Start() {
 		ball = GameObject.FindObjectOfType<Ball>();
-		au = GameObject.FindObjectOfType<AutoPlay>();
+		ap = GameObject.FindObjectOfType<AutoPlay>();
 	}
 	
 	void Update () {
-		if(au.autoPlay || autoPlay) {
+		if(ap.autoPlay || autoPlay) {
 			AutoPlay();
 		} else {
 			MoveWithMouse();

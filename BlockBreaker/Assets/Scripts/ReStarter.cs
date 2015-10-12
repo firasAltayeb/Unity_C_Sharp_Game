@@ -3,11 +3,11 @@ using System.Collections;
 
 public class ReStarter : MonoBehaviour {
 	
-	private AutoPlay au;
+	private AutoPlay ap2;
 	
-	void Start () {
-		au = GameObject.FindObjectOfType<AutoPlay>();
-		Destroy (au);
+	void awake () {
+		ap2 = GameObject.FindObjectOfType<AutoPlay>();
+		Destroy (ap2.gameObject);
 	}
 	
 }
