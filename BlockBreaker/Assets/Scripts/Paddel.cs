@@ -6,6 +6,8 @@ public class Paddel : MonoBehaviour {
 	public bool autoPlay = false;
 	private Ball ball;
 	private AutoPlay ap;
+	public float minX = 1.8f;
+	public float maxX = 14.2f; 
 	
 	void Start() {
 		ball = GameObject.FindObjectOfType<Ball>();
@@ -32,14 +34,14 @@ public class Paddel : MonoBehaviour {
 	void MoveWithMouse() {
 		Vector3 paddlePos = new Vector3(0.5f,this.transform.position.y,this.transform.position.z);
 		float mousePosInBlocks = Input.mousePosition.x / Screen.width * 16;
-		paddlePos.x = Mathf.Clamp(mousePosInBlocks, 1f, 15f);
+		paddlePos.x = Mathf.Clamp(mousePosInBlocks, minX, maxX);
 		this.transform.position = paddlePos;
 	}
 	
 	void AutoPlay() {
 		Vector3 paddlePos = new Vector3 (0.5f,this.transform.position.y,this.transform.position.z);
 		Vector3 ballPos = ball.transform.position;
-		paddlePos.x = Mathf.Clamp (ballPos.x, 1f, 15f);
+		paddlePos.x = Mathf.Clamp (ballPos.x, minX, maxX);
 		this.transform.position = paddlePos;
 	}
 }
