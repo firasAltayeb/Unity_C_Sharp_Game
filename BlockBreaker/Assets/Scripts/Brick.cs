@@ -4,6 +4,7 @@ using System.Collections;
 public class Brick : MonoBehaviour {
 
 	public AudioClip crack;
+	public GameObject smoke;
 	public Sprite[] hitSprites;
 	public static int breakableCount = 0;
 	private int timesHits;
@@ -33,10 +34,16 @@ public class Brick : MonoBehaviour {
 		if (timesHits >= maxHits) {
 			breakableCount--;
 			levelManger.BrickDestroyed();
+			PuffSmoke();
 			Destroy(gameObject);
 		} else {
 			LoadSprites();
 		} 
+	}
+	
+	void PuffSmoke() {
+		GameObject smokePuff = Instantiate(smoke, transform.position, Quaternion.identity) as GameObject;
+		smokePuff.particleSystem.startColor = gameObject.GetComponent<SpriteRenderer>().color;
 	}
 	
 	void LoadSprites () {
