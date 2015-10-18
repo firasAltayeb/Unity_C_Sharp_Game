@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Paddel : MonoBehaviour {
 	
 	public bool autoPlay = false;
+	public bool apAutoPlay = false;
 	private Ball ball;
 	private AutoPlay ap;
 	public float minX = 1.8f;
@@ -11,11 +13,15 @@ public class Paddel : MonoBehaviour {
 	
 	void Start() {
 		ball = GameObject.FindObjectOfType<Ball>();
+		try {
 		ap = GameObject.FindObjectOfType<AutoPlay>();
+			apAutoPlay = ap.autoPlay; 
+			} 
+		catch (System.NullReferenceException e){}
 	}
 	
 	void Update () {
-		if(ap.autoPlay || autoPlay) {
+		if(apAutoPlay || autoPlay) {
 			AutoPlay();
 		} else {
 			MoveWithMouse();

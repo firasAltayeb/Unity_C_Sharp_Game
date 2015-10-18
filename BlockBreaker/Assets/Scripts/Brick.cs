@@ -44,7 +44,9 @@ public class Brick : MonoBehaviour {
 		if (hitSprites[spriteIndex]) {
 			this.GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
 			audio.Play ();
+		} else {
+			Debug.LogError("Brick sprite missing");
 		}
 	}
-	
+
 }
