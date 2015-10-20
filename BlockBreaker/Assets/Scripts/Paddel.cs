@@ -4,7 +4,6 @@ using System.Collections;
 
 public class Paddel : MonoBehaviour {
 	
-	public bool autoPlay = false;
 	public bool apAutoPlay = false;
 	private Ball ball;
 	private AutoPlay ap;
@@ -21,7 +20,7 @@ public class Paddel : MonoBehaviour {
 	}
 	
 	void Update () {
-		if(apAutoPlay || autoPlay) {
+		if(apAutoPlay) {
 			AutoPlay();
 		} else {
 			MoveWithMouse();
