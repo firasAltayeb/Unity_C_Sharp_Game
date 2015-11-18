@@ -6,9 +6,14 @@ blocks breaking. Just like the classic block breaking games once all destructibl
 will be moved onto a new level without interruption of the background music.
 
 ## Mac os x
-** You can download the game for Mac by clicking Download below **
+**You can download the game for Mac by clicking Download below**
 
 - Download :
  - [BlockBreaker.app](https://github.com/firasAltayeb/BlockBreaker/raw/master/BlockBreaker/BlockBreaker.app)
+ 
+## Web 
+**You can play the game using FireFox or Safari by downloading the file below** 
+-Download :
+-[BlockBreakerWeb.zip]((https://github.com/firasAltayeb/BlockBreaker/raw/master/BlockBreaker/BlockBreakerWeb.zip)
 
 
