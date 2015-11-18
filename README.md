@@ -15,7 +15,7 @@ will be moved onto a new level without interruption of the background music.
 **You can play the game using FireFox or Safari by downloading the file below** 
 
 - Download :
- -[BlockBreakerWeb.zip](https://github.com/firasAltayeb/BlockBreaker/raw/master/BlockBreaker/BlockBreakerWeb.zip)
+ - [BlockBreakerWeb.zip](https://github.com/firasAltayeb/BlockBreaker/raw/master/BlockBreaker/BlockBreakerWeb.zip)
 
 ## Android
 **You can download the android version of the game by clicking below**
