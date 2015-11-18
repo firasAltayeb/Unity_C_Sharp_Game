@@ -9,7 +9,7 @@ will be moved onto a new level without interruption of the background music.
 **You can download the game for Mac by clicking Download below**
 
 - Download :
- - [BlockBreaker.app](https://github.com/firasAltayeb/BlockBreaker/raw/master/BlockBreaker/BlockBreaker.app)
+ - [BlockBreaker.app.zip](https://github.com/firasAltayeb/BlockBreaker/raw/master/BlockBreaker/BlockBreaker.app.zip)
  
 ## Web 
 **You can play the game using FireFox or Safari by downloading the file below** 
