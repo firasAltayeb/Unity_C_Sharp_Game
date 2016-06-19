@@ -21,7 +21,7 @@ will be moved onto a new level without interruption of the background music.
 **You can download the android version of the game by clicking below**
 
 - Download :
- - [BlockBreakerAndroid.apk](https://github.com/firasAltayeb/BlockBreaker/raw/master/BlockBreaker/BlockBreakerAndroid.zip)
+ - [BlockBreakerAndroid.apk](https://github.com/firasAltayeb/BlockBreaker/raw/master/BlockBreaker/BlockBreakerAndroid.apk)
  
 ## Windows
 **You can download the windows version of the game by clicking below**
